@@ -1,3 +1,5 @@
+import path from 'path'
+
 const config = {
   projectName: 'yui',
   date: '2021-2-7',
@@ -33,6 +35,11 @@ const config = {
     '@tarojs/plugin-terser'
   ],
   defineConstants: {
+  },
+  alias: {
+    '@/components': path.resolve(__dirname, '..', 'src/components'),
+    '@/utils': path.resolve(__dirname, '..', 'src/utils'),
+    '@/types': path.resolve(__dirname, '..', 'types'),
   },
   mini: {
     postcss: {

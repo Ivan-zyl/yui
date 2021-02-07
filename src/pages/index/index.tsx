@@ -1,6 +1,8 @@
 import Taro, { Component, Config } from '@tarojs/taro'
-import { View, Text } from '@tarojs/components'
+import { View } from '@tarojs/components'
+import { Navbar } from '@/components/Navbar'
 import './index.scss'
+import { AtIcon } from 'taro-ui'
 
 export default class Index extends Component {
 
@@ -28,7 +30,14 @@ export default class Index extends Component {
   render () {
     return (
       <View className='index'>
-        <Text>Hello world!</Text>
+        <Navbar
+          title = '导航栏'
+          extraLeft={(
+            <View>
+              <AtIcon value='iconfont icon-arrow-left' size='16' />
+            </View>
+          )}
+        />
       </View>
     )
   }

@@ -14,6 +14,11 @@
     "strictNullChecks": true,
     "sourceMap": true,
     "baseUrl": ".",
+    "paths": {
+      "@/components/*": ["./src/components/*"],
+      "@/utils/*": ["./src/utils/*"],
+      "@/types/*": ["./types/*"],
+    },
     "rootDir": ".",
     "jsx": "preserve",
     "jsxFactory": "Taro.createElement",
