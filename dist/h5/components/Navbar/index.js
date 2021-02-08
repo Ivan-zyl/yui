@@ -4,12 +4,12 @@ import { View } from '@tarojs/components';
 import { AtIcon } from 'taro-ui';
 import classNames from 'classnames';
 import './index.scss';
-export class Navbar extends Taro.Component {
+export class YNavbar extends Taro.Component {
   render() {
     const props = this.props;
 
     // @ts-ignore
-    Navbar.externalClasses = ['class-name'];
+    YNavbar.externalClasses = ['class-name'];
     const [statusBarHeight, setStatusBarHeight] = Taro.useState(0);
     const [canBack, setCanBack] = Taro.useState(false);
     Taro.useEffect(() => {

@@ -5,9 +5,9 @@ import classNames from 'classnames'
 import { NavbarProps } from '@/types/navbar'
 import './index.scss'
 
-export function Navbar (props: NavbarProps) {
+export function YNavbar (props: NavbarProps) {
   // @ts-ignore
-  Navbar.externalClasses = ['class-name'] 
+  YNavbar.externalClasses = ['class-name']
 
   const [statusBarHeight, setStatusBarHeight] = useState(0);
   const [canBack, setCanBack] = useState(false);
