@@ -1,4 +1,4 @@
-import { CSSProperties } from 'react'
+import { ComponentClass, CSSProperties } from 'react'
 
 export interface NavbarProps {
   title?: string, // 标题
@@ -7,3 +7,7 @@ export interface NavbarProps {
   style?: string | CSSProperties,
   className?: string,
 }
+
+declare const Navbar: ComponentClass<NavbarProps>
+
+export default Navbar
