@@ -1,0 +1,18 @@
+@import "~taro-ui/dist/style/index.scss";
+@import "./iconfont.scss";
+
+// color
+$blue: #6190e8;
+$white: #ffffff;
+
+// distance
+$padding: 8px;
+
+//font
+$font-size: 32px;
+
+// navbar
+$navbar-color: $blue; // #38bffe
+$navbar-font-size: $font-size;
+$navbar-font-color: $white;
+$navbar-padding: $padding;

@@ -1,0 +1,39 @@
+@import '../../app.scss';
+
+.y-navbar {
+  font-size: $navbar-font-size;
+  background-color: $navbar-color;
+  color: $navbar-font-color;
+
+  & > .titlebar {
+    display: flex;
+    height: 80px;
+    line-height: 80px;
+
+    & > .back {
+      width: 40px;
+      padding-left: $navbar-padding;
+    }
+
+    & > .back-fill {
+      width: 40px;
+    }
+
+    & > .extra-left {
+      width: 80px;
+      padding-left: $navbar-padding;
+    }
+
+    & > .title {
+      flex: 1 1 auto;
+      text-align: center;
+    }
+
+    & > .extra-right {
+      width: 80px;
+      padding-right: $navbar-padding;
+      text-align: right;
+    }
+
+  }
+}
