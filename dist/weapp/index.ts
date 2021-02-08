@@ -1,5 +1,5 @@
-import { Navbar } from './components/Navbar'
+import { YNavbar } from './components/Navbar'
 
 export {
-  Navbar,
+  YNavbar,
 }

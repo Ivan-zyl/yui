@@ -1,2 +1,2 @@
-import { Navbar } from "./components/Navbar/index";
-export { Navbar };
+import { YNavbar } from "./components/Navbar/index";
+export { YNavbar };
