@@ -20,10 +20,13 @@ export class YNavbar extends Taro.Component {
     Taro.useEffect(() => {
       setCanBack(Taro.getCurrentPages().length > 1);
     });
+    const handleBack = () => {
+      Taro.navigateBack();
+    };
     return <View className={classNames('y-navbar', props.className, 'class-name')} style={props.style}>
       <View style={{ height: statusBarHeight }} />
       <View className="titlebar">
-        {canBack && <View className="back" onClick={this.handleBack}>
+        {canBack && <View className="back" onClick={handleBack}>
             <AtIcon value="iconfont icon-arrow-left" size="16" />
           </View>}
         <View className="extra-left">{props.extraLeft}</View>

@@ -22,6 +22,10 @@ export function YNavbar (props: NavbarProps) {
     setCanBack(getCurrentPages().length > 1);
   })
 
+  const handleBack = () => {
+    Taro.navigateBack();
+  }
+
   return (
     <View
       className={classNames('y-navbar', props.className, 'class-name')}
@@ -32,7 +36,7 @@ export function YNavbar (props: NavbarProps) {
         {canBack && (
           <View
             className='back'
-            onClick={this.handleBack}
+            onClick={handleBack}
           >
             <AtIcon value='iconfont icon-arrow-left' size='16'/>
           </View>
